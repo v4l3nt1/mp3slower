@@ -1,8 +1,8 @@
 import ffmpeg
 import os
 
-sourcePath = r'C:\Users\valen\Documents\Projets\mp3slower\musique'
-destinationPath = r'C:\Users\valen\Documents\Projets\mp3slower\slowedreverbedmp3'
+sourcePath = r'musique'
+destinationPath = r'\slowedreverbedmp3'
 
 os.makedirs(destinationPath, exist_ok=True)
 
