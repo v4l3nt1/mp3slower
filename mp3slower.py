@@ -10,5 +10,5 @@ for file in os.listdir(sourcePath):
     if file.endswith('.mp3'):
         (ffmpeg.input(os.path.join(sourcePath, file))
                .output(os.path.join(destinationPath, f"{os.path.splitext(file)[0]} [slowed ~ reverb].mp3"),
-                       filter_complex='lowpass=f=10000,asetrate=48000*0.92,aresample=48000')
+                       filter_complex='lowpass=f=10000,asetrate=48000*0.90,aresample=48000')
                .run())
